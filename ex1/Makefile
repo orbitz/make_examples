@@ -9,7 +9,7 @@ $(SUBDIRS):
 	$(MAKE) -C $@
 
 $(SUBDIRS_TEST):
-	$(MAKE) -C $(patsubst %_test,%,$(@)) test
+	$(MAKE) -C $(patsubst %_test,%,$@) test
 
 
 test: $(SUBDIRS_TEST)
