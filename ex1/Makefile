@@ -1,5 +1,5 @@
 SUBDIRS = s1 s2 s3
-SUBDIRS_TEST = $(patsubst %,%_test,$(SUBDIRS))
+SUBDIRS_TEST = $(SUBDIRS:%=%_test)
 
 .PHONY: all $(SUBDIRS) $(SUBDIRS_TEST)
 
